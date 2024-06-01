@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["script"],
+      "domainType": "thirdParty",
+      "requestDomains": ["polyfill.io"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "scheme": "https",
+          "host": "polyfill-fastly.net"
+        }
+      }
+    }
+  }
+]
